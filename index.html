@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passive Voice Web app</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="lesson.html">Lesson</a>
+    </nav>
+
+    <!-- Home Section -->
+       <title>Education Platform</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            
+        }
+
+        /* Splash Screen */
+        .splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(135deg, #004080, #00A86B);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 1000; /* On top of all content */
+            animation: fadeOut 3s ease forwards 3s; /* Fades out after 5s */
+        }
+
+        .splash-screen h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        .splash-screen p {
+            font-size: 1.5rem;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards 0.5s; /* Delayed fade-in */
+        }
+
+        /* Main Content */
+        .content {
+            opacity: 0;
+            animation: contentFadeIn 1s ease forwards 4s; /* Delayed to match splash */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        @keyframes contentFadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen">
+        <h1>Welcome to Active and Passive Voice Web app</h1>
+        <p>Empowering future educators</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h2>Home Page</h2>
+        <p>Active vs Passive Voice</p><!-- Welcome Section -->
+        <section style="text-align: center; padding: 20px; background-color: #f2f2f2;">
+            <h1>Welcome to Active and Passive Voice Web app </h1>
+            <p style="font-size: 18px;">
+                This platform is designed for teachers and anyone who teaches English   
+                Here, you’ll find valuable resources in <strong>Languages</strong>
+            </p>
+        </section>
+    
+        <!-- Purpose Section -->
+        <section style="padding: 20px;">
+            <h2 style="color: #004080;">Our Purpose</h2>
+            <p>
+                The purpose of this web app is to teach and guide users in understanding the difference between active and passive voice in English grammar. It provides clear explanations, examples, practice exercises, and a video lesson to help learners recognize, form, and use both voices effectively in writing and speech.
+            </p>
+        </section>
+    
+        <!-- What This Web App is About Section -->
+        <section style="padding: 20px; background-color: #e6f7ff;">
+            <h2 style="color: #004080;">What This Web App is About</h2>
+            <ul style="font-size: 16px; line-height: 1.6;">
+                <li><strong>Definition of Voice</strong> – Explains how verbs relate subjects and actions.</li>
+                <li><strong>Active vs Passive Voice</strong> – Shows the difference and provides clear examples.</li>
+                <li><strong>When & Why to Use Passive Voice</strong> – Helps users understand contexts for passive construction.</li>
+                <li><strong>Forming Passive Sentences</strong> – Step-by-step instructions and formulas for conversion.</li>
+                <li><strong>Recognition of Passive Voice</strong> – Tips for identifying passive constructions in text.</li>
+                <li><strong>Practice & Reflection</strong> – Exercises for users to apply what they learn.</li>
+                <li><strong>Video Lesson Integration</strong> – Provides visual and auditory guidance for enhanced learning.</li>
+            </ul>
+        </section>
+    
+    
+        <!-- Motivational Quote -->
+        <section style="text-align: center; padding: 20px; font-style: italic;">
+            <p>"The roots of education are bitter, but the fruit is sweet." – <strong>Aristotle</strong></p>
+        </section>
+    </body>
+    </div>
+</body>
+</html>
